@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Star Wars</title>
+</head>
+<body>
+    <header class="header">
+        <img src="img/logo.png" class="logo">
+    </header>
+    <br class="main">
+            <div class="images">
+                <img src="img/cosmonaut.svg" class="img-btn" id="cosmonaut">
+                <img src="img/rocket.svg" class="img-btn" id="rocket">
+                <img src="img/planet.png" class="img-btn" id="planet">
+            </div>
+            </br>
+            <div class="search">
+                <div>
+                    <input type="text" id="searchPeople" class="searchInput"> 
+                </div>  
+                <div>
+                    <input type="text" id="searchShips" class="searchInput"> 
+                </div>
+                <div>
+                    <input type="text" id="searchPlanets" class="searchInput">
+                </div>
+            </div>
+            </br>
+            <img src="img/loader.gif" id="loader" class="loader">
+    </main>
+    <footer>
+        <table id="table1" class="table">
+            <thead class="thead" id="thead">
+                <th>
+                    <button id="sort" class="buttonSort">Name</button>
+                </th>
+                <th>Height</th>
+                <th>Mass</th>
+                <th>Gender</th>
+                <th>Birth Year</th>
+                <th>Films</th>
+            </thead>
+            <tbody id="tbody1" class="tbody"></tbody>
+        </table>
+        <table id="table2" class="table">
+            <thead class="thead" id="thead2">
+                <th id="sort2">
+                    <button id="sort2" class="buttonSort">Name</button>
+                </th>
+                <th>Model</th>
+                <th>Manifacturer</th>
+                <th>Cost in credits</th>
+                <th>Crew</th>
+                <th>Starships class</th>
+            </thead>
+            <tbody id="tbody2" class="tbody"></tbody>
+        </table>
+        <table id="table3" class="table">
+            <thead class="thead" id="thead3">
+                <th id="sort3"> 
+                    <button id="sort3" class="buttonSort">Name</button>
+                </th>
+                <th>Rotation period</th>
+                <th>Climate</th>
+                <th>Gravity</th>
+                <th>Population</th>
+                <th>Terrain</th>
+            </thead>
+            <tbody id="tbody3" class="tbody"></tbody>
+        </table>
+        <div id="pagedItems" class="pagination"></div>
+        <div class="buttonContainer">
+            <button id="pervious" class="button"><<</button>
+            <button id="next" class="button">>></button>
+            <button id="pervious2" class="button"><<</button>
+            <button id="next2" class="button">>></button>
+            <button id="pervious3" class="button"><<</button>
+            <button id="next3" class="button">>></button>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
